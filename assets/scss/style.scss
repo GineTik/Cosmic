@@ -1,0 +1,23 @@
+
+:root {
+    --light-button-color-hovered: #f1eeee;
+    --content-background-color: #fff;
+}
+
+body {
+    margin: 0;
+    font-family: Montserrat;
+    background: var(--background-color);
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+@import "./header/header";
+@import "./main/main";
+@import "./fonts";

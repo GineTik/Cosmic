@@ -1,0 +1,9 @@
+@for $i from 1 to 10 {
+    @font-face {
+        font-family: 'Montserrat';
+        // src: url('../fonts/Montserrat/.eot');
+        src: url('../fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+    
+        font-weight: $i * 100;
+    }
+}
