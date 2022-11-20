@@ -11,27 +11,42 @@ function register_color_settings($wp_customize) {
 
 // === background color ===
 
-    $wp_customize->add_setting( 'background_color' , array(
-        'default'   => '#E4ECD2',
-        'type' => 'option',
-    ));
-    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'background_color_control', array(
-        'label'      => __('Background color', $theme_title),
-        'section'    => $section_name,
-        'settings'   => 'background_color',
-    )));
+    add_simple_setting(
+        $wp_customize,
+        $section_name,
+        'background_color',
+        '#E4ECD2');
 
 // === primary color === 
 
-    $wp_customize->add_setting( 'primary_color' , array(
-        'default'   => '#6C8536',
-        'type' => 'option',
-    ));
-    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'primary_color_control', array(
-        'label'      => __('Primary color', $theme_title),
-        'section'    => $section_name,
-        'settings'   => 'primary_color',
-    )));
+    add_simple_setting(
+        $wp_customize,
+        $section_name,
+        'primary_color',
+        '#6C8536');
+
+// === text color === 
+    
+    add_simple_setting(
+        $wp_customize,
+        $section_name,
+        'text_color',
+        '#2b2222');
 }
 
 add_action('customize_register', 'register_color_settings');
+
+
+// helpers
+
+function add_simple_setting($wp_customize, $section_name, $setting_name, $default_value) {
+    $wp_customize->add_setting($setting_name, array(
+        'default'   => $default_value,
+        'type' => 'option',
+    ));
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, $setting_name . '_control', array(
+        'label'      => __($setting_name),
+        'section'    => $section_name,
+        'settings'   => $setting_name,
+    )));
+}

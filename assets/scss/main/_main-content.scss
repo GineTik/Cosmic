@@ -1,0 +1,175 @@
+$margin-bottom: 2rem;
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color);
+    margin-top: $margin-bottom * 2;
+    margin-bottom: $margin-bottom;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+p {
+    color: var(--text-color);
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 150% !important;
+    margin: 0 0 $margin-bottom 0;
+}
+
+div {
+    margin: 0;
+    margin-bottom: $margin-bottom;
+}
+
+a {
+    cursor: pointer;
+}
+
+
+// last plus icon
+.wp-block-cover__inner-container {
+    &, p {
+        margin-bottom: 0;
+    }
+}
+
+
+// columns
+.wp-block-columns {
+    .wp-block-column {
+        margin-bottom: $margin-bottom * 1.1;
+    }
+
+    &, p, .wp-block-image, .wp-block-buttons {
+        margin-bottom: 0;
+    }
+}
+
+
+// image
+.wp-block-gallery {
+    height: 225px;
+
+    .wp-block-image {
+        height: 100%;
+        justify-content: start !important;
+        
+        // for wordpress editor
+        div {
+            height: 100%; 
+        }
+
+        img {
+            min-height: 100%;
+            max-height: 100%;
+            flex: 0 !important;
+        }
+    }
+}
+
+figure div {
+    margin: 0;
+}
+
+.is-style-text-in-image {
+    position: relative;
+    transform: scale(1);
+    transition: transform .2s;
+
+    img {
+        filter: brightness(50%);
+    }
+
+    figcaption {
+        display: inline-block;
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+        font-size: 1rem;
+        font-family: Montserrat, "Helvetica Neue";
+        font-weight: 400;
+        text-align: left;
+        max-width: calc(100% - 20px);
+        color: var(--text-light-color);
+        background-color: var(--primary-color);
+        padding: 5px 10px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    &:hover {
+        //transform: scale(1.1);
+    }
+}
+
+
+// buttons
+.wp-block-buttons {
+    margin-top: 10px;
+    margin-bottom: $margin-bottom;
+
+    div {
+        margin-bottom: 0px;
+    }
+}
+
+.wp-block-button__link {
+    background: var(--background-color);
+    color: var(--text-color);
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 6px 15px;
+    border-radius: 0;
+    transition: transform .2s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+
+
+// audio
+
+audio {
+    display: none;
+}
+
+.wp-block-audio {
+    width: 300px;
+
+    .audio {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: var(--primary-color);
+        color: var(--text-light-color);
+        padding: 10px 20px;
+    
+        &__icon {
+            cursor: pointer;
+        }
+    
+        &__timer {
+            margin-left: auto;
+        }
+    }
+
+    &.is-style-width-100-percent {
+        width: 100%;
+    }
+
+    .wp-element-caption {
+        text-align: left;
+        font-family: Montserrat;
+        font-size: 1rem;
+        font-weight: 400;
+        color: var(--text-color);
+    }
+}

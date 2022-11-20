@@ -1,8 +1,3 @@
-:root {
-  --light-button-color-hovered: #f1eeee;
-  --content-background-color: #fff;
-}
-
 body {
   margin: 0;
   font-family: Montserrat;
@@ -20,7 +15,8 @@ body {
 .header {
   display: flex;
   align-items: center;
-  padding: 16px 5px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 .header__logo {
   font-size: 30px;
@@ -59,49 +55,141 @@ body {
   background-color: var(--content-background-color);
   padding: 40px;
 }
-
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
-  font-weight: 100;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
-  font-weight: 200;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
-  font-weight: 300;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
-  font-weight: 500;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
-  font-weight: 600;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
-  font-weight: 800;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+.main__title {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
   font-weight: 900;
+  color: var(--text-color);
+}
+.main__content h1, .main__content h2, .main__content h3, .main__content h4, .main__content h5, .main__content h6 {
+  color: var(--text-color);
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-weight: 900;
+}
+.main__content h2 {
+  font-size: 1.6rem;
+}
+.main__content p {
+  color: var(--text-color);
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 150% !important;
+  margin: 0 0 2rem 0;
+}
+.main__content div {
+  margin: 0;
+  margin-bottom: 2rem;
+}
+.main__content a {
+  cursor: pointer;
+}
+.main__content .wp-block-cover__inner-container, .main__content .wp-block-cover__inner-container p {
+  margin-bottom: 0;
+}
+.main__content .wp-block-columns .wp-block-column {
+  margin-bottom: 2.2rem;
+}
+.main__content .wp-block-columns, .main__content .wp-block-columns p, .main__content .wp-block-columns .wp-block-image, .main__content .wp-block-columns .wp-block-buttons {
+  margin-bottom: 0;
+}
+.main__content .wp-block-gallery {
+  height: 225px;
+}
+.main__content .wp-block-gallery .wp-block-image {
+  height: 100%;
+  justify-content: start !important;
+}
+.main__content .wp-block-gallery .wp-block-image div {
+  height: 100%;
+}
+.main__content .wp-block-gallery .wp-block-image img {
+  min-height: 100%;
+  max-height: 100%;
+  flex: 0 !important;
+}
+.main__content figure div {
+  margin: 0;
+}
+.main__content .is-style-text-in-image {
+  position: relative;
+  transform: scale(1);
+  transition: transform 0.2s;
+}
+.main__content .is-style-text-in-image img {
+  filter: brightness(50%);
+}
+.main__content .is-style-text-in-image figcaption {
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  font-size: 1rem;
+  font-family: Montserrat, "Helvetica Neue";
+  font-weight: 400;
+  text-align: left;
+  max-width: calc(100% - 20px);
+  color: var(--text-light-color);
+  background-color: var(--primary-color);
+  padding: 5px 10px;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main__content .wp-block-buttons {
+  margin-top: 10px;
+  margin-bottom: 2rem;
+}
+.main__content .wp-block-buttons div {
+  margin-bottom: 0px;
+}
+.main__content .wp-block-button__link {
+  background: var(--background-color);
+  color: var(--text-color);
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 6px 15px;
+  border-radius: 0;
+  transition: transform 0.2s;
+}
+.main__content .wp-block-button__link:hover {
+  transform: scale(1.1);
+}
+.main__content audio {
+  display: none;
+}
+.main__content .wp-block-audio {
+  width: 300px;
+}
+.main__content .wp-block-audio .audio {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--primary-color);
+  color: var(--text-light-color);
+  padding: 10px 20px;
+}
+.main__content .wp-block-audio .audio__icon {
+  cursor: pointer;
+}
+.main__content .wp-block-audio .audio__timer {
+  margin-left: auto;
+}
+.main__content .wp-block-audio.is-style-width-100-percent {
+  width: 100%;
+}
+.main__content .wp-block-audio .wp-element-caption {
+  text-align: left;
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.footer {
+  padding-top: 16px;
+  padding-bottom: 16px;
 }/*# sourceMappingURL=style.css.map */

@@ -6,14 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php wp_title(); ?></title>
 
-    <!-- css variables -->
-    <style>
-        :root {
-            --light-button-color: #fff;
-            --primary-color: <?php echo get_option('primary_color'); ?>;
-            --background-color: #<?php echo get_option('background_color'); ?>;
-        }
-    </style>
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>

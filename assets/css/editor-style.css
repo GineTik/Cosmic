@@ -1,0 +1,154 @@
+.edit-post-visual-editor__content-area > div {
+  background-color: #e4ecd2 !important;
+}
+.edit-post-visual-editor__content-area > div .editor-styles-wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 40px !important;
+  flex: 0 !important;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.edit-post-visual-editor__content-area > div .editor-styles-wrapper .block-list-appender {
+  margin-bottom: -10px;
+}
+.edit-post-visual-editor__content-area > div .editor-styles-wrapper .block-list-appender .block-editor-default-block-appender__content {
+  margin: 0;
+}
+.edit-post-visual-editor__content-area > div .editor-styles-wrapper .edit-post-visual-editor__post-title-wrapper {
+  margin: 0;
+}
+.edit-post-visual-editor__content-area > div .editor-styles-wrapper .edit-post-visual-editor__post-title-wrapper .wp-block-post-title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-family: Montserrat;
+  font-weight: 900;
+}
+.edit-post-visual-editor__content-area > div .editor-styles-wrapper h1, .edit-post-visual-editor__content-area > div .editor-styles-wrapper h2, .edit-post-visual-editor__content-area > div .editor-styles-wrapper h3, .edit-post-visual-editor__content-area > div .editor-styles-wrapper h4, .edit-post-visual-editor__content-area > div .editor-styles-wrapper h5, .edit-post-visual-editor__content-area > div .editor-styles-wrapper h6 {
+  color: var(--text-color);
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-weight: 900;
+}
+.edit-post-visual-editor__content-area > div .editor-styles-wrapper h2 {
+  font-size: 1.6rem;
+}
+.edit-post-visual-editor__content-area > div .editor-styles-wrapper p {
+  color: var(--text-color);
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 150% !important;
+  margin: 0 0 2rem 0;
+}
+.edit-post-visual-editor__content-area > div .editor-styles-wrapper div {
+  margin: 0;
+  margin-bottom: 2rem;
+}
+.edit-post-visual-editor__content-area > div .editor-styles-wrapper a {
+  cursor: pointer;
+}
+.edit-post-visual-editor__content-area > div .editor-styles-wrapper .wp-block-cover__inner-container, .edit-post-visual-editor__content-area > div .editor-styles-wrapper .wp-block-cover__inner-container p {
+  margin-bottom: 0;
+}
+.edit-post-visual-editor__content-area > div .editor-styles-wrapper .wp-block-columns .wp-block-column {
+  margin-bottom: 2.2rem;
+}
+.edit-post-visual-editor__content-area > div .editor-styles-wrapper .wp-block-columns, .edit-post-visual-editor__content-area > div .editor-styles-wrapper .wp-block-columns p, .edit-post-visual-editor__content-area > div .editor-styles-wrapper .wp-block-columns .wp-block-image, .edit-post-visual-editor__content-area > div .editor-styles-wrapper .wp-block-columns .wp-block-buttons {
+  margin-bottom: 0;
+}
+.edit-post-visual-editor__content-area > div .editor-styles-wrapper .wp-block-gallery {
+  height: 225px;
+}
+.edit-post-visual-editor__content-area > div .editor-styles-wrapper .wp-block-gallery .wp-block-image {
+  height: 100%;
+  justify-content: start !important;
+}
+.edit-post-visual-editor__content-area > div .editor-styles-wrapper .wp-block-gallery .wp-block-image div {
+  height: 100%;
+}
+.edit-post-visual-editor__content-area > div .editor-styles-wrapper .wp-block-gallery .wp-block-image img {
+  min-height: 100%;
+  max-height: 100%;
+  flex: 0 !important;
+}
+.edit-post-visual-editor__content-area > div .editor-styles-wrapper figure div {
+  margin: 0;
+}
+.edit-post-visual-editor__content-area > div .editor-styles-wrapper .is-style-text-in-image {
+  position: relative;
+  transform: scale(1);
+  transition: transform 0.2s;
+}
+.edit-post-visual-editor__content-area > div .editor-styles-wrapper .is-style-text-in-image img {
+  filter: brightness(50%);
+}
+.edit-post-visual-editor__content-area > div .editor-styles-wrapper .is-style-text-in-image figcaption {
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  font-size: 1rem;
+  font-family: Montserrat, "Helvetica Neue";
+  font-weight: 400;
+  text-align: left;
+  max-width: calc(100% - 20px);
+  color: var(--text-light-color);
+  background-color: var(--primary-color);
+  padding: 5px 10px;
+  margin: 0;
+  box-sizing: border-box;
+}
+.edit-post-visual-editor__content-area > div .editor-styles-wrapper .wp-block-buttons {
+  margin-top: 10px;
+  margin-bottom: 2rem;
+}
+.edit-post-visual-editor__content-area > div .editor-styles-wrapper .wp-block-buttons div {
+  margin-bottom: 0px;
+}
+.edit-post-visual-editor__content-area > div .editor-styles-wrapper .wp-block-button__link {
+  background: var(--background-color);
+  color: var(--text-color);
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 6px 15px;
+  border-radius: 0;
+  transition: transform 0.2s;
+}
+.edit-post-visual-editor__content-area > div .editor-styles-wrapper .wp-block-button__link:hover {
+  transform: scale(1.1);
+}
+.edit-post-visual-editor__content-area > div .editor-styles-wrapper audio {
+  display: none;
+}
+.edit-post-visual-editor__content-area > div .editor-styles-wrapper .wp-block-audio {
+  width: 300px;
+}
+.edit-post-visual-editor__content-area > div .editor-styles-wrapper .wp-block-audio .audio {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--primary-color);
+  color: var(--text-light-color);
+  padding: 10px 20px;
+}
+.edit-post-visual-editor__content-area > div .editor-styles-wrapper .wp-block-audio .audio__icon {
+  cursor: pointer;
+}
+.edit-post-visual-editor__content-area > div .editor-styles-wrapper .wp-block-audio .audio__timer {
+  margin-left: auto;
+}
+.edit-post-visual-editor__content-area > div .editor-styles-wrapper .wp-block-audio.is-style-width-100-percent {
+  width: 100%;
+}
+.edit-post-visual-editor__content-area > div .editor-styles-wrapper .wp-block-audio .wp-element-caption {
+  text-align: left;
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-color);
+}/*# sourceMappingURL=editor-style.css.map */

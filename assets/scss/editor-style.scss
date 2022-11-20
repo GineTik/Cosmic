@@ -1,0 +1,40 @@
+
+.edit-post-visual-editor__content-area {
+
+    // background
+    & > div {
+        background-color: #e4ecd2 !important;
+
+        .editor-styles-wrapper {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 40px !important;
+            flex: 0 !important;
+            box-sizing: border-box;
+            font-size: 16px;
+        
+            .block-list-appender {
+                margin-bottom: -10px;
+
+                .block-editor-default-block-appender__content {
+                    margin: 0;
+                }
+            }
+
+            .edit-post-visual-editor__post-title-wrapper {
+                margin: 0;
+
+                .wp-block-post-title {
+                    margin-top: 0;
+                    margin-bottom: 1rem;
+                    font-size: 1.8rem;
+                    font-family: Montserrat;
+                    font-weight: 900;
+                }
+            }
+            
+            @import "./main/main-content";
+        }
+    }
+}

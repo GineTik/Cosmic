@@ -1,4 +1,16 @@
 .main {
     background-color: var(--content-background-color);
     padding: 40px;
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 2rem;
+        font-size: 1.8rem;
+        font-weight: 900;
+        color: var(--text-color);
+    }
+
+    &__content {
+        @import "./main-content";
+    }
 }

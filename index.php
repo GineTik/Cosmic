@@ -3,9 +3,13 @@
 <div class="main container">
     <?php
     if (have_posts()) {
+        if (the_title('', '', false) != '') {
+            ?> 
+                <h1 class="main__title title"><?php the_title(); ?></h1>
+            <?php
+        }
         ?>
-        <h1 class="main__title title"><?php the_title(); ?></h1>
-        <div class="main_content">
+        <div class="main__content">
             <?php the_content(); ?>
         </div>
         <?php
