@@ -1,6 +1,7 @@
 .main {
     background-color: var(--content-background-color);
     padding: 40px;
+    position: relative;
 
     &__title {
         margin-top: 0;
@@ -12,5 +13,49 @@
 
     &__content {
         @import "./main-content";
+    }
+}
+
+.sidebar {
+    position: absolute;
+    right: calc(100% + 25px);
+
+    &__social-network {
+        display: flex;
+    }
+
+    &__title {
+        white-space: nowrap;
+        margin-right: 7px;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        color: var(--primary-color);
+    }
+
+    &__menu {
+        .menu-item {
+            $size: 35px;
+
+            width: $size;
+            height: $size;
+            background: var(--light-button-color);
+            color: var(--light-button-text-color);
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            transition: background .1s;
+
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+
+            &:hover {
+                // background: var(--light-button-color-hovered);
+                background: var(--light-button-color-hovered);
+                color: var(--light-button-text-color-hovered);
+            }
+        }
     }
 }

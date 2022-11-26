@@ -8,14 +8,19 @@
     &__logo {
         font-size: 30px;
         font-weight: 900;
-        color: var(--primary-color);
     }
 
     &__description {
-        color: var(--primary-color);
         margin-left: 15px;
         margin-top: 4px;
     }
+
+    &__logo,
+    &__description {
+        color: var(--primary-color);
+        text-decoration: none;
+    }
+
 
     &__navbar {
         display: flex;
@@ -37,7 +42,9 @@
         }
 
         &:hover {
+            // background: var(--light-button-color-hovered);
             background: var(--light-button-color-hovered);
+            color: var(--light-button-text-color-hovered);
         }
     }
 

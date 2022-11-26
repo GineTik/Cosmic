@@ -1,3 +1,5 @@
+<?php require_once get_template_directory() . '/inc/utils.php'; ?>
+
 <!DOCTYPE html>
 <html <?php bloginfo('language'); ?>>
 <head>
@@ -11,8 +13,8 @@
 <body <?php body_class(); ?>>
 
 <header class="header container">
-    <div class="header__logo"><?php echo bloginfo('name'); ?></div>
-    <span class="header__description"><?php echo bloginfo('description'); ?></span>
+    <a href="/" class="header__logo"><?php echo bloginfo('name'); ?></a>
+    <a href="/" class="header__description"><?php echo bloginfo('description'); ?></a>
     <nav class="header__navbar navbar">
         <div class="navbar__item navbar__menu">Меню</div>
         <a class="navbar__item navbar__icon">

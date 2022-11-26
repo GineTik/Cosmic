@@ -38,7 +38,7 @@ function register_site_styles() {
 }
 
 function register_site_scripts() {
-    
+
 }
 
 function register_variables_styles() {
@@ -48,8 +48,13 @@ function register_variables_styles() {
 function register_scripts() {
     //wp_enqueue_script('jquery', get_template_directory_uri() . '/lib/jquery/jquery.min.js');
     wp_enqueue_script('fontawesome', 'https://kit.fontawesome.com/a2be051007.js');
-    wp_enqueue_script('audio', get_template_directory_uri() . '/assets/js/audio.js', array('jquery'));
+    wp_enqueue_script(
+        'audio', 
+        get_template_directory_uri() . '/assets/js/audio.js',
+        array( 'jquery' ),
+    );
 }
+
 
 // variables
 add_action('admin_head', 'register_variables_styles');
@@ -61,7 +66,7 @@ add_action('admin_init', 'register_editor_styles');
 
 
 // style scripts for site and admin editor
-add_action('wp_head', 'register_scripts');
+add_action('wp_footer', 'register_scripts');
 add_action('admin_footer', 'register_scripts');
 
 

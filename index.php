@@ -1,6 +1,14 @@
 <?php get_header(); ?>
 
 <div class="main container">
+    <div class="sidebar">
+        <div class="sidebar__social-network">
+            <span class="sidebar__title">Social Network</span>
+            <?php
+                display_menu('social_networks_menu', 'sidebar__menu', '');
+            ?>
+        </div>
+    </div>
     <?php
     if (have_posts()) {
         if (the_title('', '', false) != '') {
